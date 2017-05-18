@@ -74,6 +74,7 @@ protected List<ReactPackage> getPackages() {
 .addPackage(new ReactVideoPackage())
 ```
 
+<<<<<<< HEAD
 #### Windows
 
 Make the following additions to the given files manually:
@@ -81,7 +82,6 @@ Make the following additions to the given files manually:
 **windows/myapp.sln**
 
 Add the `ReactNativeVideo` project to your solution.
-
 1. Open the solution in Visual Studio 2015
 2. Right-click Solution icon in Solution Explorer > Add > Existing Project...
 3. Select `node_modules\react-native-video\windows\ReactNativeVideo\ReactNativeVideo.csproj`
@@ -91,12 +91,10 @@ Add the `ReactNativeVideo` project to your solution.
 Add a reference to `ReactNativeVideo` to your main application project.
 
 Using Visual Studio 2015:
-
 1. Right-click main application project > Add > Reference...
 2. Check `ReactNativeVideo` from Solution Projects.
 
 Manually from `windows/myapp/myapp.csproj`, add:
-
 ```xml
     <ProjectReference Include="..\..\node_modules\react-native-video\windows\ReactNativeVideo\ReactNativeVideo.csproj">
       <Project>{e8f5f57f-757e-4237-ad23-f7a8755427cd}</Project>
@@ -131,6 +129,8 @@ using System.Collections.Generic;
 >>>>>>> parent of be9f840... Update README.md
 ```
 
+=======
+>>>>>>> parent of 8cc1dbd... feat(Windows): Adds Windows support to react-native-video
 ## Usage
 
 ```javascript
