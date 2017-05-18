@@ -48,7 +48,7 @@ public final class ExoPlayerView extends FrameLayout {
     public ExoPlayerView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        boolean useTextureView = false;
+        boolean useTextureView = true;
 
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
@@ -232,4 +232,3 @@ public final class ExoPlayerView extends FrameLayout {
     }
 
 }
-
