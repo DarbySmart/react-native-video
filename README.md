@@ -71,55 +71,6 @@ protected List<ReactPackage> getPackages() {
 }
 ```
 
-#### Windows
-
-Make the following additions to the given files manually:
-
-**windows/myapp.sln**
-
-Add the `ReactNativeVideo` project to your solution.
-
-1. Open the solution in Visual Studio 2015
-2. Right-click Solution icon in Solution Explorer > Add > Existing Project...
-3.
-  UWP: Select `node_modules\react-native-video\windows\ReactNativeVideo\ReactNativeVideo.csproj`
-  WPF: Select `node_modules\react-native-video\windows\ReactNativeVideo.Net46\ReactNativeVideo.Net46.csproj`
-
-**windows/myapp/myapp.csproj**
-
-Add a reference to `ReactNativeVideo` to your main application project. From Visual Studio 2015:
-
-1. Right-click main application project > Add > Reference...
-2.
-  UWP: Check `ReactNativeVideo` from Solution Projects.
-  WPF: Check `ReactNativeVideo.Net46` from Solution Projects.
-
-**MainPage.cs**
-
-Add the `ReactVideoPackage` class to your list of exported packages.
-```cs
-using ReactNative;
-using ReactNative.Modules.Core;
-using ReactNative.Shell;
-using ReactNativeVideo; // <-- Add this
-using System.Collections.Generic;
-...
-
-        public override List<IReactPackage> Packages
-        {
-            get
-            {
-                return new List<IReactPackage>
-                {
-                    new MainReactPackage(),
-                    new ReactVideoPackage(), // <-- Add this
-                };
-            }
-        }
-
-...
-```
-
 ## Usage
 
 ```javascript
