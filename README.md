@@ -1,3 +1,6 @@
+# Darby
+Pulled from master branch to get latest fixes. Windows support broke the project and added a lot of unnecessary dependencies. This reverts Windows support and switches from SurfaceView to TextureView for performance.
+
 ## react-native-video
 
 A `<Video>` component for react-native, as seen in
